@@ -17,11 +17,11 @@
     <body>
         <div id="main">
             <div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(<a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(<a href="http://firefox.com.cn/download/">Firefox</a>)浏览器，或者其他游览器的最新版本。</div>
-            <audio autoplay="autoplay" height="100" width="100">
-                    <source src="renxi.mp3" type="audio/mp3" />
-                    <embed height="100" width="100" src="renxi.mp3" />
-            </audio>
             <div id="wrap">
+                <audio id="music" autoplay="autopaly" loop="loop">
+                              <source src="https://sharefs.ali.kugou.com/202112110539/d1f83d2d9a7524c3ccc738bb68fd7250/G148/M01/0D/09/dJQEAFx94x-ANdRwADtMlF62cws410.mp3" type="audio/mp3" />
+                        </audio>
+                        <ul id="music_lrc" class="kk_lrc"><li></li><li></li><li></li></ul>
                 <div id="text">
                     <div id="code"> <font color="#FF0000"> <span class="say">亲爱的女王大人：</span><br>
                       <span class="say"> 我这辈子最幸运的事就是遇见了你</span><br>
@@ -46,7 +46,7 @@
                   </div>
                 <div id="clock-box">
                     <span class="STYLE1"></span><font color="#33CC00">宝贝儿，我们相爱</font>
-<span class="STYLE1">已经是……</span>
+<span class="STYLE1">已经有……</span>
                   <div id="clock"></div>
               </div>
                 <canvas id="canvas" width="1100" height="680"></canvas>
@@ -185,7 +185,7 @@
 
         var textAnimate = eval(Jscex.compile("async", function () {
 		    var together = new Date();
-		    together.setFullYear(2018,12 , 11); 			//时间年月日
+		    together.setFullYear(2018, 11 , 11); 			//时间年月日 月份是0到11之间的整数，表示一月到十二月
 		    together.setHours(0);						//小时	
 		    together.setMinutes(0);					//分钟
 		    together.setSeconds(0);					//秒前一位
